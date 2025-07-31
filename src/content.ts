@@ -4,6 +4,8 @@
 
   allLinks.forEach((link) => {
     const href = link.getAttribute("href");
+    // Only consider links that do not contain a colon, which indicates a file or other non-article link.
+    // example '/wiki/File:Example.jpg' etc.
     if (href && !href.includes(":")) {
       uniqueLinks.add(href);
     }
