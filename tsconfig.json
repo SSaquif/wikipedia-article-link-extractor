@@ -6,7 +6,8 @@
     "outDir": "dist",
     "esModuleInterop": true,
     "strict": true,
-    "skipLibCheck": true
+    "skipLibCheck": true,
+    "types": ["node"] // need it to use path in vite.config.ts
   },
   "include": ["src"]
 }
